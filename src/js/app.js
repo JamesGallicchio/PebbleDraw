@@ -54,6 +54,7 @@ Accel.on('data', function(e) {
     nextPacket.y = y/25;
     nextPacket.z = z/25;
     var json = JSON.stringify(nextPacket);
+    console.log(json);
     ws.send(json);
   } else {
     ws = connect();
